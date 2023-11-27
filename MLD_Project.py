@@ -8,14 +8,14 @@ from PIL import Image  # to deal with images (PIL: Python imaging library)
 
 # title of the sidebar
 html_temp = """
-<div style="background-color:green;padding:10px">
+<div style="background-color:blue;padding:10px">
 <h2 style="color:white;text-align:center;">Car Price Prediction </h2>
 </div>"""
 st.sidebar.markdown(html_temp,unsafe_allow_html=True)
 
 # title of the body
 html_temp = """
-<div style="background-color:tomato;padding:10px">
+<div style="background-color:green;padding:10px">
 <h2 style="color:white;text-align:center;">Streamlit ML Cloud App</h2>
 </div>"""
 st.markdown(html_temp, unsafe_allow_html=True)
