@@ -53,7 +53,11 @@ df = pd.DataFrame.from_dict([my_dict])
 st.table(df)
 
 # Prediction with user inputs
-predict = st.button("Predict")
-result = model.predict(df)
-if predict :
-    st.success(result[0])
+if st.button("Predict"):
+    pred = model.predict(df)
+    col1, col2 = st.columns(2)
+    col1.write("The estimated value of car price is €")
+    col2.write(pred[0].astype(int))
+
+
+st.write("\n\n")
